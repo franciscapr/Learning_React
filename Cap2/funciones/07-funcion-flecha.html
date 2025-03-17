@@ -35,6 +35,19 @@
         
         console.log(lordify3('Francisca', 'Silicon Valley'))
 
+
+        const lordify4 = (firstName, land) => {
+            if(!firstName){
+                throw new Error("A firstName is required to lordify");
+            }
+            if (!land){
+                throw new Error("A lord must hace a land");
+            }
+            return `${firstName} of ${land}`;
+        };
+
+        console.log(lordify4("Kelly", "Sonoma"));
+
     </script>
 
 
